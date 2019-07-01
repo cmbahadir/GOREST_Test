@@ -6,12 +6,10 @@ Python template for GUI and API test of gorest.co.in website. API tests are writ
 
 API test cases are  written for gorest.co.in/users endpoint
 
-'''
-1 - Get all users.
-2 - Get user with a specific first name.
-3 - Add a user.
-4 - Try to add an already existing user.
-'''
+	1 - Get all users.
+	2 - Get user with a specific first name.
+	3 - Add a user.
+	4 - Try to add an already existing user.
 
 The only GUI test currently is checking the send button on gorest.co.in/rest-console.html
 
@@ -19,8 +17,6 @@ The only GUI test currently is checking the send button on gorest.co.in/rest-con
 
 Install prequisites with;
 
-'''
-pip install -L requirements.txt
-'''
+	pip install -L requirements.txt
 
 
