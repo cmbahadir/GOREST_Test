@@ -17,6 +17,6 @@ The only GUI test currently is checking the send button on gorest.co.in/rest-con
 
 Install prequisites with;
 
-	pip install -L requirements.txt
+	pip install -r requirements.txt
 
 
