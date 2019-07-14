@@ -9,12 +9,13 @@ class TestSet_Users(object):
     format = "json"
     test_url = "https://gorest.co.in/public-api/users?"
     
-    def __find_string_in_response(self, rawResponse, searchFor):
+    def __find_string_in_response(self, fullResponse, searchFor):
         """
         Test Helper method to find a specific string in the response body.
         """
         check = True
-        if "result" not in rawResponse:
+        rawResponse = fullResponse;
+        if "result" not in rawResponse.text:
             check = False
         else:
             responseJSON = rawResponse.json()
@@ -26,7 +27,7 @@ class TestSet_Users(object):
         return check
 
     def setup_method(self):
-        settingsFile = open("Test_Settings.yaml", "r")
+        settingsFile = open("/home/cmb/Workspace/GOREST_Test/Gorest-Test/API_Test/Test_Settings.yaml", "r")
         setting = yaml.safe_load(settingsFile)
         self.access_token = setting["api_key"]
 
@@ -47,7 +48,8 @@ class TestSet_Users(object):
         """
         payload = {"format":self.format,"access-token":self.access_token,"first_name":first_name}
         response = requests.get(self.test_url, params=payload)
-        assert self.__find_string_in_response(response, first_name) == True
+        check = self.__find_string_in_response(response, first_name)
+        assert check == True
 
     #Test-3
     def test_create_a_user(self):
