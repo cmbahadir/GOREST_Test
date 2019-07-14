@@ -1,0 +1,9 @@
+{
+  "Gorest-Test/API_Test/userlist_test.py::TestSet_Users::test_create_a_user": true,
+  "Gorest-Test/API_Test/userlist_test.py::TestSet_Users::test_create_an_existing_user": true,
+  "Gorest-Test/API_Test/userlist_test.py::TestSet_Users::test_get_a_user[Eleanora]": true,
+  "Gorest-Test/API_Test/userlist_test.py::TestSet_Users::test_get_a_user[John]": true,
+  "Gorest-Test/API_Test/userlist_test.py::TestSet_Users::test_get_a_user[Ram]": true,
+  "Gorest-Test/API_Test/userlist_test.py::TestSet_Users::test_get_users": true,
+  "Gorest-Test/FrontEnd_Test/selenium_ex_1_test.py::TestSet01::test_basic": true
+}
